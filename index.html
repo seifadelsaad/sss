@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Periodic Table</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header-row">
+      <h1>Interactive Periodic Table</h1>
+      <button id="legend-toggle" aria-label="Show legend" style="display:none;">
+        &#9776;
+      </button>
+    </div>
+    <input type="text" id="search" placeholder="Search elements..." />
+    <div id="periodic-table" class="periodic-table"></div>
+    <div id="lanthanide-row" class="separate-row"></div>
+    <div id="actinide-row" class="separate-row"></div>
+    <div id="tooltip" class="tooltip" style="display:none;"></div>
+    <div class="legend" id="legend">
+      <span class="legend-item"><span class="legend-color legend-alkali-metal" data-category="alkali-metal"></span> Alkali metals</span>
+      <span class="legend-item"><span class="legend-color legend-alkaline-earth-metal" data-category="alkaline-earth-metal"></span> Alkaline earth metals</span>
+      <span class="legend-item"><span class="legend-color legend-transition-metal" data-category="transition-metal"></span> Transition metals</span>
+      <span class="legend-item"><span class="legend-color legend-post-transition-metal" data-category="post-transition-metal"></span> Post-transition metals</span>
+      <span class="legend-item"><span class="legend-color legend-metalloid" data-category="metalloid"></span> Metalloids</span>
+      <span class="legend-item"><span class="legend-color legend-reactive-nonmetal" data-category="reactive-nonmetal"></span> Reactive non-metals</span>
+      <span class="legend-item"><span class="legend-color legend-noble-gas" data-category="noble-gas"></span> Noble gases</span>
+      <span class="legend-item"><span class="legend-color legend-lanthanide" data-category="lanthanide"></span> Lanthanides</span>
+      <span class="legend-item"><span class="legend-color legend-actinide" data-category="actinide"></span> Actinides</span>
+      <span class="legend-item"><span class="legend-color legend-halogen" data-category="halogen"></span> Halogens</span>
+      <span class="legend-item"><span class="legend-color legend-unknown" data-category="unknown"></span> Unknown properties</span>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> 
